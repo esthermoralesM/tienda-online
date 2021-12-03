@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <img src="./images/carrito.png" id="btnMuestra" width="60px" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+          </img>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 400px; padding: 20px;">
+             <table class="table table-hover text-nowrap p-0">
+               <thead class="table-success">
+                 <tr>
+                   <th>Nombre</th>
+                   <th>Precio</th>
+                 </tr>
+               </thead>
+               <tbody></tbody>
+             </table>
+             <p class="text-right">Total: <span id="total"></span>&euro;</p>
+             <a href="#" id="vaciar" class="btn btn-primary btn-block">Vaciar carrito</a>
+            </div>
+          </li>   
+        </ul> 
+      </div>
+    </div>
+  </nav>
+
+<br><br>
+    <div id="ropa">
+      <div class="row" style="justify-content: center; align-items: center; gap: 50px;">
+       
+      <div class="card" style="width: 14rem; height: 500px;">
+        <img id="foto1" src="./images/camisetaBlanca.jpg" class="card-img-top" alt="imagen camiseta blanca"width="250px" height="250px">
+        <div class="card-body">
+          <h5 id="titulo1" class="card-title">Camiseta blanca</h5>
+          <p id="descripcion1" class="card-text">Cómoda camiseta blanca unisex.</p>
+          <p>Price: <span id="euros1">8</span>€</p>
+          <a id="btn1" class="btn btn-primary">Añadir</a>
+        </div>
+     
+    </div>
+   
+      <div class="card" style="width: 14rem; height: 500px;">
+        <img id="foto2" src="./images/camisetaAzjpg.jpg" class="card-img-top" alt="imagen camiseta azúl" width="250px" height="250px">
+        <div class="card-body">
+          <h5 id="titulo2" class="card-title">Camiseta azul</h5>
+          <p id="descripcion2" class="card-text">Camiseta azúl de estilo informal.</p>
+          <p>Price: <span id="euros2">9</span> €</p>
+          <a id="btn2" class="btn btn-primary">Añadir</a>
+        </div>
+     
+    </div>
+   
+      <div class="card" style="width: 14rem; height: 500px;">
+        <img id="foto3" src="./images/camisetaNike.jpg" class="card-img-top" alt="imagen camiseta nike" width="250px" height="250px">
+        <div class="card-body">
+          <h5 id="titulo3" class="card-title">Camiseta Nike</h5>
+          <p id="descripcion3" class="card-text">Camiseta ideal para hacer deporte.</p>
+          <p>Price: <span id="euros3">29</span> €</p>
+          <a id="btn3" class="btn btn-primary">Añadir</a>
+        </div>
+     
+    </div>
+   
+      <div class="card" style="width: 14rem; height: 500px;">
+        <img id="foto4" src="./images/zapatillas.jpg" class="card-img-top" alt="imagen zapatillas" width="250px" height="250px">
+        <div class="card-body">
+          <h5 id="titulo4" class="card-title">Zapatillas</h5>
+          <p id="descripcion4" class="card-text">Zapatillas bambas tipo converse.</p>
+          <p>Price: <span id="euros4">21</span> €</p>
+          <a id="btn4" class="btn btn-primary">Añadir</a>
+        </div>
+     
+    </div>
+  </div>
+
+
+
+  <div class="row" style="justify-content: center; align-items: center;  gap: 50px;">
+   
+      <div class="card" style="width: 14rem; height: 500px;">
+        <img id="foto5" src="./images/abrigoInvierno.jpg" class="card-img-top" alt="imagen abrigo invierno" width="250px" height="250px">
+        <div class="card-body">
+          <h5 id="titulo5" class="card-title">Abrigo invierno</h5>
+          <p id="descripcion5" class="card-text">Abrigo ideal para el invierno.</p>
+          <p>Price: <span id="euros5">40</span> €</p>
+          <a id="btn5" class="btn btn-primary">Añadir</a>
+        </div>
+     
+    </div>
+    
+   
+    <div class="card" style="width: 14rem; height: 500px;">
+      <img id="foto6" src="./images/camisetaNiña.jpg" class="card-img-top" alt="imagen camiseta niña" width="250px" height="250px">
+      <div class="card-body">
+        <h5 id="titulo6" class="card-title">Camiseta Miss</h5>
+        <p id="descripcion6" class="card-text">Camiseta para niña ideal para salir.</p>
+        <p>Price: <span id="euros6">11</span> €</p>
+        <a id="btn6" class="btn btn-primary">Añadir</a>
+      </div>
+   
+  </div>
+
+ 
+    <div class="card" style="width: 14rem; height: 500px;">
+      <img id="foto7" src="./images/oantalonCropped.jpg" class="card-img-top" alt="Pantalón cropped" width="250px" height="250px">
+      <div class="card-body">
+        <h5 id="titulo7" class="card-title">Pantalón Cropped</h5>
+        <p id="descripcion7" class="card-text">Pantalón ideal para cuando no sabes que ponerte.</p>
+        <p>Price: <span id="euros7">19</span> €</p>
+        <a id="btn7" class="btn btn-primary">Añadir</a>
+      </div>
+   
+  </div>
+ 
+    <div class="card" style="width: 14rem; height: 500px;">
+      <img id="foto8" src="./images/pantalonAncho.jpg" class="card-img-top" alt="Pantalón negro" width="250px" height="250px">
+      <div class="card-body">
+        <h5 id="titulo8" class="card-title">Pantalón ancho</h5>
+        <p id="descripcion8" class="card-text">Pantalón ancho y de cintura muy alta. Los que se llevarán para Primavera.</p>
+        <p>Price: <span id="euros8">22</span> €</p>
+        <a id="btn8" class="btn btn-primary">Añadir</a>
+      </div>
+   
+  </div>
+    </div>
+      <script src="./Productos.js"></script>
+      <script src="./tienda.js"></script>    
+</body>
+</html>
